@@ -19,6 +19,7 @@ PROMPT='%F{green}%~%f> '
 source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
+source <(kubectl completion zsh)
 
 # mysql
 export PATH="/usr/local/mysql/bin:$PATH"
@@ -29,6 +30,9 @@ eval "$(anyenv init -)"
 
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# less syntax highlight
+export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+alias less='less -R'
 
 # alias
 alias activate="source .venv/bin/activate"

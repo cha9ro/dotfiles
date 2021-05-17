@@ -19,3 +19,10 @@ Install packages from `Brewfile`
 ```bash
 $ brew bundle
 ```
+
+## Other packages to manually install
+- sdkman
+- anyenv
+- mysql
+- docker
+
