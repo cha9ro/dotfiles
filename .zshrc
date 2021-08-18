@@ -34,6 +34,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 alias less='less -R'
 
+# direnv hook
+eval "$(direnv hook zsh)"
+
 # alias
 alias activate="source .venv/bin/activate"
 alias ll="ls -l"
