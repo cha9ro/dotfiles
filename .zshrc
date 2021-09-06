@@ -45,6 +45,7 @@ alias ll="ls -l"
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit -v'
+alias gce='gitmoji -c'
 alias gco='git checkout'
 alias gcoa='git branch | fzf | xargs git checkout'
 alias gl='git pull'
