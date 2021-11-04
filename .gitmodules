@@ -1,0 +1,16 @@
+[submodule "emoji-cli"]
+	path = .zsh/emoji-cli
+	url = https://github.com/b4b4r07/emoji-cli
+	branch = master
+[submodule "zsh-syntax-highlighting"]
+	path = .zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+	branch = master
+[submodule "zsh-completions"]
+	path = .zsh/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+	branch = master
+[submodule "zsh-autosuggestions"]
+	path = .zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+	branch = master
