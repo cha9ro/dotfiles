@@ -20,6 +20,14 @@ Install packages from `Brewfile`
 $ brew bundle
 ```
 
+## Zsh theme
+[powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+```zsh
+# configure 
+> p10k configure
+```
+
 ## Other packages to manually install
 - sdkman
 - anyenv
