@@ -24,6 +24,12 @@ source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
 source <(kubectl completion zsh)
 
+# theme
+source ~/.zsh/zsh-themes/powerlevel10k/powerlevel10k.zsh-theme
+
+## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 # mysql
 export PATH="/usr/local/mysql/bin:$PATH"
 
@@ -60,10 +66,7 @@ alias gp='git push'
 alias gst='git status'
 alias gf='git fetch'
 
-source ~/.zsh/zsh-themes/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"
