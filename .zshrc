@@ -5,18 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# zsh customization
-autoload -Uz compinit && compinit
+# zsh completion
+autoload -U compinit; compinit
 zstyle ':completion:*:default' menu select=1
-zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-autoload -Uz colors && colors
-
-autoload -Uz vcs_info
-precmd_vcs_info() {vcs_info}
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-zstyle ':vcs_info:git:*' formats '%b'
+# candidate colorization
+autoload -U colors; colors
+zstyle ':completion:*' list-colors "${LS_COLORS}"
 
 # plugins
 source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -26,7 +22,6 @@ source <(kubectl completion zsh)
 
 # theme
 source ~/.zsh/zsh-themes/powerlevel10k/powerlevel10k.zsh-theme
-
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
