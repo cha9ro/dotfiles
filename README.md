@@ -3,6 +3,11 @@ Env management and installation for new machines.
 
 ## dotfiles
 Make symbolic link
+- `.vimrc`
+- `.zshrc`
+- `.zsh`
+- `.p10k.zsh`
+
 ```bash
 # example of .zshrc
 $ cd ${PATH_TO_THIS_REPOSITORY}
