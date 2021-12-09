@@ -14,6 +14,12 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 autoload -U colors; colors
 zstyle ':completion:*' list-colors "${LS_COLORS}"
 
+# history
+export HISTFILE=${HOME}/.zsh_history
+export HISTSIZE=2000
+export SAVEHIST=100000
+setopt hist_ignore_dups
+
 # plugins
 source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
