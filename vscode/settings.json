@@ -1,0 +1,26 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "python.languageServer": "Pylance",
+    "editor.wordWrap": "on",
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "gitlens.codeLens.enabled": false,
+    "git.autofetch": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "editor.formatOnSave": true,
+    "explorer.autoReveal": false,
+    "python.linting.flake8CategorySeverity.W": "Information",
+    "python.linting.flake8Args": [
+        "--max-line-length=120"
+    ],
+    "material-icon-theme.saturation": 0.8,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.bracketPairColorization.enabled": true
+}

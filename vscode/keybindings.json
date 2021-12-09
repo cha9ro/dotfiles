@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+k",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "[$TM_SELECTED_TEXT]($0)"
+        },
+        "when": "editorTextFocus && editorLangId == markdown"
+    }
+]
