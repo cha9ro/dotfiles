@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # zsh completion
+source ${HOME}/.zsh/zsh-completions/zsh-completions.plugin.zsh
 autoload -U compinit; compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -25,7 +26,6 @@ source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
 source <(kubectl completion zsh)
-fpath=(${HOME}/.zsh/zsh-completions/src $fpath)
 
 # theme
 source ~/.zsh/zsh-themes/powerlevel10k/powerlevel10k.zsh-theme
