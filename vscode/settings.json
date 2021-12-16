@@ -22,5 +22,6 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "editor.bracketPairColorization.enabled": true
+    "editor.bracketPairColorization.enabled": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF"
 }
