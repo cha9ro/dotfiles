@@ -26,7 +26,9 @@ setopt hist_ignore_dups
 source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
+# completions
 source <(kubectl completion zsh)
+source <(stern --completion=zsh)
 
 # theme
 source ~/.zsh/zsh-themes/powerlevel10k/powerlevel10k.zsh-theme
