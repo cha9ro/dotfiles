@@ -2,36 +2,29 @@
 Env management and installation for new machines.
 
 ## dotfiles
-Make symbolic link
-- `.vimrc`
-- `.zshrc`
-- `.zsh`
-- `.p10k.zsh`
+Make symbolic links of dotfiles to home
 
 ```bash
-# example of .zshrc
-$ cd ${PATH_TO_THIS_REPOSITORY}
-$ ln -fs ${PWD}/.zshrc ${HOME}/.zshrc
+$ cd <PATH_TO_THIS_DIRECTORY>
+$ chmod 744 makeSymbLink.sh
+$ bash -c "./makeSymbLink.sh"
 ```
 
 ## Homebrew
-Dump packges managed by Homebrew
+Dump packages managed by Homebrew
+
 ```bash
 $ brew bundle dump
 ```
 
 Install packages from `Brewfile`
+
 ```bash
 $ brew bundle
 ```
 
 ## Zsh theme
 [powerlevel10k](https://github.com/romkatv/powerlevel10k)
-
-```zsh
-# configure 
-> p10k configure
-```
 
 ## Other packages to manually install
 - sdkman
