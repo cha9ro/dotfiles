@@ -54,6 +54,7 @@ eval "$(direnv hook zsh)"
 # alias
 alias activate="source .venv/bin/activate"
 alias ll="ls -l"
+alias ls="ls -G"
 alias k="kubectl"
 
 ## git alias
