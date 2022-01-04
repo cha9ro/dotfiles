@@ -11,26 +11,17 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
+Plugin 'scrooloose/nerdtree'
+let NERDTreeShowHidden=1
 
-" The NerdTree https://vimawesome.com/plugin/nerdtree-red
-Plugin 'srcooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'airblade/vim-gitgutter'
+set updatetime=250
+
+
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,10 +38,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
 " ----------- Manual Setting ------------
 " setting
 set fenc=utf-8
+set backspace=indent,eol,start
 
 " Visual
 set number
@@ -60,6 +51,15 @@ set showmatch
 set wildmode=list:longest
 syntax enable
 
+" ColorScheme
+colorscheme delek
+set background=dark
+let g:gitgutter_override_sign_column_highlight=0
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
+highlight GitGutterChangeDelete ctermfg=4
 
 " Tab
 " Visualize invisible words (tab is '▸-')
@@ -79,6 +79,6 @@ set incsearch
 set wrapscan
 set hlsearch
 
-" Simple keybind
+" Keybind
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 inoremap <silent> jj <ESC>
