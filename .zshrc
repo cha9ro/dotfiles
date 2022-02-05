@@ -11,6 +11,8 @@ source ${HOME}/.zsh/zsh-other-completions/zsh-other-completions.plugin.zsh
 autoload -U compinit; compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' use-cache on
+export PATH=".:$PATH"
 
 # candidate colorization
 autoload -U colors; colors

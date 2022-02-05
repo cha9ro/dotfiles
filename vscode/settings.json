@@ -11,7 +11,6 @@
     "git.autofetch": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
-    "editor.formatOnSave": true,
     "explorer.autoReveal": false,
     "python.linting.flake8CategorySeverity.W": "Information",
     "python.linting.flake8Args": [
