@@ -10,8 +10,8 @@
 	path = .zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 	branch = master
-[submodule ".zsh/zsh-themes/powerlevel10k"]
-	path = .zsh/zsh-themes/powerlevel10k
+[submodule ".zsh/powerlevel10k"]
+	path = .zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
 [submodule ".zsh/zsh-completions"]
 	path = .zsh/zsh-completions
