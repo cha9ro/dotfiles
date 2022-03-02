@@ -3,6 +3,7 @@
 dotfiles=(
     ".vimrc"
     ".zshrc"
+    ".zfunc"
     ".p10k.zsh"
     ".zsh"
 )

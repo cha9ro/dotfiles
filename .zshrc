@@ -7,7 +7,7 @@ fi
 
 # zsh completion
 source ${HOME}/.zsh/zsh-completions/zsh-completions.plugin.zsh
-source ${HOME}/.zsh/zsh-other-completions/zsh-other-completions.plugin.zsh
+fpath+=${HOME}/.zfunc
 autoload -U compinit; compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
