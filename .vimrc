@@ -22,6 +22,9 @@ set updatetime=250
 
 
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+
+Plugin 'frazrepo/vim-rainbow'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
