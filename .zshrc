@@ -23,6 +23,14 @@ export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=2000
 export SAVEHIST=100000
 setopt hist_ignore_dups
+function fzf-select-history() {
+  BUFFER="$(history -nr 1 | awk '!a[$0]++' | fzf --no-sort -x -m -e -q "$LBUFFER" | sed 's/\\n/\n/g')"
+  CURSOR=$#BUFFER
+  zle -R -c
+}
+autoload fzf-select-history
+zle -N fzf-select-history
+bindkey '^R' fzf-select-history
 
 # plugins
 source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
