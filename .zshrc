@@ -53,6 +53,9 @@ alias less='less -R'
 # direnv hook
 eval "$(direnv hook zsh)"
 
+# cloud storage home
+export CLOUD_STORAGE_HOME="${HOME}/Library/CloudStorage"
+
 # alias
 alias activate="source .venv/bin/activate"
 alias ll="ls -l"
@@ -75,8 +78,7 @@ alias gp='git push'
 alias gst='git status'
 alias gf='git fetch'
 
-
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
+
