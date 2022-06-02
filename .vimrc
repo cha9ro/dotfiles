@@ -55,7 +55,7 @@ set wildmode=list:longest
 syntax enable
 
 " ColorScheme
-colorscheme delek
+colorscheme default
 set background=dark
 let g:gitgutter_override_sign_column_highlight=0
 highlight clear SignColumn
