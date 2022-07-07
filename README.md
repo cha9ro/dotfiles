@@ -5,9 +5,10 @@ Env management and installation for new machines by cha9ro.
 Make symbolic links of dotfiles to home
 
 ```bash
-$ cd <PATH_TO_THIS_DIRECTORY>
-$ chmod 744 install_macos.sh
-$ bash -c "./install_macos.sh"
+git clone https://github.com/cha9ro/dotfiles.git
+cd dotfiles
+chmod 744 install_macos.sh
+bash -c "./install_macos.sh"
 ```
 
 ## Zsh theme
