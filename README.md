@@ -1,34 +1,28 @@
-# Env management
-Env management and installation for new machines.
+# dotfiles
+Env management and installation for new machines by cha9ro.
 
-## dotfiles
+## Installation
 Make symbolic links of dotfiles to home
 
 ```bash
-$ cd <PATH_TO_THIS_DIRECTORY>
-$ chmod 744 makeSymbLink.sh
-$ bash -c "./makeSymbLink.sh"
-```
-
-## Homebrew
-Dump packages managed by Homebrew
-
-```bash
-$ brew bundle dump
-```
-
-Install packages from `Brewfile`
-
-```bash
-$ brew bundle
+git clone https://github.com/cha9ro/dotfiles.git
+cd dotfiles
+chmod 744 install_macos.sh
+bash -c "./install_macos.sh"
 ```
 
 ## Zsh theme
-[powerlevel10k](https://github.com/romkatv/powerlevel10k)
+Manually install [fonts](https://github.com/romkatv/powerlevel10k#manual-font-installation) used in [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+
+## Vim plugins
+Install vim plugins via [Vundle](https://github.com/VundleVim/Vundle.vim):
+
+```
+:PluginInstall
+```
 
 ## Other packages to manually install
-- sdkman
-- anyenv
+Install the following packages if necessary
 - mysql
 - docker
-
