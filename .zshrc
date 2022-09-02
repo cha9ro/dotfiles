@@ -8,11 +8,14 @@ fi
 # zsh completion
 source ${HOME}/.zsh/zsh-completions/zsh-completions.plugin.zsh
 fpath+=${HOME}/.zfunc
-autoload -U compinit; compinit
+autoload -Uz compinit; compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' use-cache on
 export PATH=".:$PATH"
+# aws completion
+autoload bashcompinit; bashcompinit
+complete -C $(which aws_completer) aws
 
 # candidate colorization
 autoload -U colors; colors
@@ -90,3 +93,7 @@ alias gf='git fetch'
 export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
 
+
+autoload -U +X bashcompinit && bashcompinit
+
+complete -o nospace -C /Users/takuro/.anyenv/envs/tfenv/versions/1.2.7/terraform terraform
