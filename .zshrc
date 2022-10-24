@@ -54,6 +54,9 @@ export PATH="/usr/local/mysql/bin:$PATH"
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
+# tfenv and terraform
+export PATH="$HOME/.anyenv/envs/tfenv/bin:$PATH"
+complete -o nospace -C $(which terraform) terraform
 
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -72,6 +75,7 @@ alias activate="source .venv/bin/activate"
 alias ll="ls -l"
 alias ls="ls -G"
 alias k="kubectl"
+alias tf="terraform"
 
 ## git alias
 alias ga='git add'
@@ -92,8 +96,3 @@ alias gf='git fetch'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
-
-
-autoload -U +X bashcompinit && bashcompinit
-
-complete -o nospace -C /Users/takuro/.anyenv/envs/tfenv/versions/1.2.7/terraform terraform
