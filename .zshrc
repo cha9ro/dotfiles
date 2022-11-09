@@ -55,9 +55,6 @@ complete -o nospace -C $(which terraform) terraform
 
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-# less syntax highlight
-export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
-alias less='less -R'
 
 # direnv hook
 eval "$(direnv hook zsh)"
