@@ -1,0 +1,5 @@
+function fzf-history() {
+  BUFFER="$(history -nr 1 | awk '!a[$0]++' | fzf --no-sort -x -m -e -q "$LBUFFER" | sed 's/\\n/\n/g')"
+  CURSOR=$#BUFFER
+  zle -R -c
+}

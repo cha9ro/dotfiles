@@ -5,20 +5,22 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# load custom functions
+fpath+=${HOME}/.zfunc
+
 # zsh completion
 source ${HOME}/.zsh/zsh-completions/zsh-completions.plugin.zsh
-fpath+=${HOME}/.zfunc
-autoload -Uz compinit; compinit
+autoload -Uz compinit && compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' use-cache on
 export PATH=".:$PATH"
 # aws completion
-autoload bashcompinit; bashcompinit
+autoload -Uz bashcompinit && bashcompinit
 complete -C $(which aws_completer) aws
 
 # candidate colorization
-autoload -U colors; colors
+autoload -Uz colors && colors
 zstyle ':completion:*' list-colors "${LS_COLORS}"
 
 # history
@@ -26,14 +28,10 @@ export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=2000
 export SAVEHIST=100000
 setopt hist_ignore_dups
-function fzf-select-history() {
-  BUFFER="$(history -nr 1 | awk '!a[$0]++' | fzf --no-sort -x -m -e -q "$LBUFFER" | sed 's/\\n/\n/g')"
-  CURSOR=$#BUFFER
-  zle -R -c
-}
-autoload fzf-select-history
-zle -N fzf-select-history
-bindkey '^R' fzf-select-history
+# fzf-history
+autoload -Uz fzf-history
+zle -N fzf-history
+bindkey '^R' fzf-history
 
 # plugins
 source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
