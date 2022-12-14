@@ -10,7 +10,9 @@ fpath+=${HOME}/.zfunc
 
 # zsh completion
 source ${HOME}/.zsh/zsh-completions/zsh-completions.plugin.zsh
-fpath+=$(brew --prefix)/share/zsh/site-functions
+if type brew &>/dev/null; then 
+  fpath+=$(brew --prefix)/share/zsh/site-functions 
+fi
 autoload -Uz compinit && compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -38,9 +40,6 @@ bindkey '^R' fzf-history
 source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
-# completions
-source <(kubectl completion zsh)
-source <(stern --completion=zsh)
 
 # theme
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
@@ -49,16 +48,22 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+if type anyenv&>/dev/null; then
+  eval "$(anyenv init -)"
+fi
+
 # tfenv and terraform
-export PATH="$HOME/.anyenv/envs/tfenv/bin:$PATH"
-complete -o nospace -C $(which terraform) terraform
+if type terraform&>/dev/null; then
+  complete -o nospace -C $(which terraform) terraform
+fi
 
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # direnv hook
-eval "$(direnv hook zsh)"
+if type direnv&>/dev/null; then; 
+  eval "$(direnv hook zsh)"
+fi
 
 # cloud storage home
 export CLOUD_STORAGE_HOME="${HOME}/Library/CloudStorage"
