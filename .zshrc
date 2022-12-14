@@ -14,13 +14,11 @@ if type brew &>/dev/null; then
   fpath+=$(brew --prefix)/share/zsh/site-functions 
 fi
 autoload -Uz compinit && compinit
+autoload -Uz bashcompinit && bashcompinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' use-cache on
 export PATH=".:$PATH"
-# aws completion
-autoload -Uz bashcompinit && bashcompinit
-complete -C $(which aws_completer) aws
 
 # candidate colorization
 autoload -Uz colors && colors
