@@ -49,6 +49,8 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 if type anyenv&>/dev/null; then
   eval "$(anyenv init -)"
 fi
+# poetry
+export PATH="${HOME}/.local/bin:$PATH"
 
 # tfenv and terraform
 if type terraform&>/dev/null; then
@@ -59,7 +61,7 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # direnv hook
-if type direnv&>/dev/null; then; 
+if type direnv&>/dev/null; then
   eval "$(direnv hook zsh)"
 fi
 
