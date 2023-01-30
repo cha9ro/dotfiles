@@ -74,6 +74,7 @@ alias ll="ls -l"
 alias ls="ls -G"
 alias k="kubectl"
 alias tf="terraform"
+alias openbb="/Applications/OpenBB\ Terminal/OpenBB\ Terminal"
 
 ## git alias
 alias ga='git add'
