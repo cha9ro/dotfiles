@@ -7,10 +7,5 @@
             "snippet": "[$TM_SELECTED_TEXT]($0)"
         },
         "when": "editorTextFocus && editorLangId == markdown"
-    },
-    {
-        "key": "cmd+w",
-        "command": "-workbench.action.closeWindow",
-        "when": "!editorIsOpen && !multipleEditorGroups"
     }
 ]

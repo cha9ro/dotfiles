@@ -1,26 +1,43 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": false,
-    "python.languageServer": "Pylance",
-    "editor.wordWrap": "on",
-    "terminal.external.osxExec": "iTerm.app",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "gitlens.codeLens.enabled": false,
-    "git.autofetch": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "explorer.autoReveal": false,
-    "python.linting.flake8CategorySeverity.W": "Information",
-    "python.linting.flake8Args": [
-        "--max-line-length=120"
-    ],
-    "material-icon-theme.saturation": 0.8,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "editor.bracketPairColorization.enabled": true,
-    "terminal.integrated.fontFamily": "MesloLGS NF, Menlo, Monaco, 'Courier New', monospace"
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "cSpell.userWords": [
+    "callout",
+    "chatgpt",
+    "chromadb",
+    "dotenv",
+    "langchain",
+    "nextjs",
+    "nextui",
+    "openai",
+    "pydantic",
+    "streamlit",
+    "tailwindcss",
+    "Takezawa",
+    "takuro",
+    "typecheck"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "explorer.autoReveal": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "flake8.args": ["--max-line-length=88"],
+  "gitlens.codeLens.enabled": false,
+  "notebook.output.wordWrap": true,
+  "python.analysis.autoImportCompletions": true,
+  "tailwindCSS.emmetCompletions": true,
+  "terminal.integrated.fontFamily": "'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
+  "workbench.iconTheme": "material-icon-theme",
+  "yaml.schemas": {
+    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
+  }
 }
