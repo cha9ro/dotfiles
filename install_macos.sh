@@ -35,6 +35,7 @@ dotfiles=(
     ".p10k.zsh"
     ".zsh"
     ".zprofile"
+    ".tool-versions"
 )
 for file in ${dotfiles[@]}
 do
