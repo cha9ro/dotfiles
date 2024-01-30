@@ -44,13 +44,8 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-if type anyenv&>/dev/null; then
-  eval "$(anyenv init -)"
-fi
-# poetry
-export PATH="${HOME}/.local/bin:$PATH"
+# asdf
+source $(brew --prefix asdf)/libexec/asdf.sh
 
 # tfenv and terraform
 if type terraform&>/dev/null; then
