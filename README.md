@@ -21,6 +21,9 @@ Install vim plugins via [Vundle](https://github.com/VundleVim/Vundle.vim):
 ```
 :PluginInstall
 ```
+## NeoVim
+
+Install neovim and use LazyVim
 
 ## Other packages to manually install
 Install the following packages if necessary
