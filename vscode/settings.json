@@ -8,6 +8,7 @@
     "chromadb",
     "dotenv",
     "langchain",
+    "neovim",
     "nextjs",
     "nextui",
     "openai",
@@ -36,6 +37,7 @@
   "python.analysis.autoImportCompletions": true,
   "tailwindCSS.emmetCompletions": true,
   "terminal.integrated.fontFamily": "'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
+  "vim.vimrc.enable": true,
   "workbench.iconTheme": "material-icon-theme",
   "yaml.schemas": {
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
