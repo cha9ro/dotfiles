@@ -1,0 +1,65 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 10,
+        "colorSelected" : "#D1D2D4FF",
+        "font" : "System Light",
+        "color" : "#B7B9B9FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#9E9E9EFF"
+      },
+      "backgroundSelected" : "#A450A6CC",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System",
+        "color" : "#FFFFFFFF"
+      },
+      "iconPaddingHorizontal" : 6,
+      "roundness" : 9,
+      "paddingVertical" : 5,
+      "iconSize" : 36
+    },
+    "search" : {
+      "backgroundSelected" : "#A550A67F",
+      "paddingHorizontal" : 9,
+      "spacing" : 3,
+      "text" : {
+        "size" : 28,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Light",
+        "color" : "#FFFFFFFF"
+      },
+      "background" : "#00000000",
+      "roundness" : 9,
+      "paddingVertical" : 6
+    },
+    "window" : {
+      "color" : "#00000000",
+      "paddingHorizontal" : 4,
+      "width" : 600,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 12,
+      "paddingVertical" : 4
+    },
+    "credit" : "Takuro",
+    "visualEffectMode" : 2,
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 3
+    },
+    "scrollbar" : {
+      "color" : "#C062C3FF",
+      "thickness" : 3
+    },
+    "name" : "Sakura Dark"
+  }
+}

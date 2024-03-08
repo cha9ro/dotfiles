@@ -17,7 +17,8 @@
     "tailwindcss",
     "Takezawa",
     "takuro",
-    "typecheck"
+    "typecheck",
+    "vectorstores"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -41,5 +42,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "yaml.schemas": {
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
-  }
+  },
+  "notebook.lineNumbers": "on"
 }
