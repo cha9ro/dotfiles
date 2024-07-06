@@ -1,6 +1,7 @@
 {
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
   },
   "cSpell.userWords": [
     "callout",
@@ -32,10 +33,14 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "flake8.args": ["--max-line-length=88"],
+  "files.insertFinalNewline": true,
   "gitlens.codeLens.enabled": false,
+  "isort.importStrategy": "fromEnvironment",
+  "notebook.lineNumbers": "on",
   "notebook.output.wordWrap": true,
   "python.analysis.autoImportCompletions": true,
+  "python.analysis.fixAll": ["source.unusedImports"],
+  "python.analysis.typeCheckingMode": "basic",
   "tailwindCSS.emmetCompletions": true,
   "terminal.integrated.fontFamily": "'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
   "vim.vimrc.enable": true,
@@ -43,5 +48,36 @@
   "yaml.schemas": {
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
   },
-  "notebook.lineNumbers": "on"
+  "aws.telemetry": false,
+  "aws.samcli.location": "/usr/local/bin/sam",
+  "aws.samcli.enableCodeLenses": true,
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ]
 }

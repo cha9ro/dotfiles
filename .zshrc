@@ -63,6 +63,9 @@ fi
 # cloud storage home
 export CLOUD_STORAGE_HOME="${HOME}/Library/CloudStorage"
 
+# Disable AWS SAM CLI telementry collection
+export SAM_CLI_TELEMETRY=0
+
 # alias
 alias activate="source .venv/bin/activate"
 alias ll="ls -l"
