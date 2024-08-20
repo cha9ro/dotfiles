@@ -1,8 +1,10 @@
 {
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "aws.samcli.enableCodeLenses": true,
+  "aws.samcli.location": "/usr/local/bin/sam",
+  "aws.telemetry": false,
   "cSpell.userWords": [
     "callout",
     "chatgpt",
@@ -35,22 +37,15 @@
   },
   "files.insertFinalNewline": true,
   "gitlens.codeLens.enabled": false,
-  "isort.importStrategy": "fromEnvironment",
-  "notebook.lineNumbers": "on",
+  "notebook.formatOnSave.enabled": true,
   "notebook.output.wordWrap": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.fixAll": ["source.unusedImports"],
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "off",
   "tailwindCSS.emmetCompletions": true,
   "terminal.integrated.fontFamily": "'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
   "vim.vimrc.enable": true,
   "workbench.iconTheme": "material-icon-theme",
-  "yaml.schemas": {
-    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
-  },
-  "aws.telemetry": false,
-  "aws.samcli.location": "/usr/local/bin/sam",
-  "aws.samcli.enableCodeLenses": true,
   "yaml.customTags": [
     "!And",
     "!And sequence",
@@ -79,5 +74,8 @@
     "!Select sequence",
     "!Split",
     "!Split sequence"
-  ]
+  ],
+  "yaml.schemas": {
+    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
+  }
 }
