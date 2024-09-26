@@ -42,6 +42,10 @@
   "python.analysis.autoImportCompletions": true,
   "python.analysis.fixAll": ["source.unusedImports"],
   "python.analysis.typeCheckingMode": "off",
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.pytestParameters": true,
   "tailwindCSS.emmetCompletions": true,
   "terminal.integrated.fontFamily": "'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
   "vim.vimrc.enable": true,
@@ -76,6 +80,7 @@
     "!Split sequence"
   ],
   "yaml.schemas": {
-    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.1/dist/toc.schema.json": "/toc\\.yml/i"
-  }
+    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
+  },
+  "ruff.format.args": ["--line-length=120"]
 }
