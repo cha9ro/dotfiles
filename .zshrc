@@ -69,6 +69,7 @@ export SAM_CLI_TELEMETRY=0
 # alias
 alias activate="source .venv/bin/activate"
 alias ll="ls -l"
+alias lla="ls -la"
 alias ls="ls -G"
 alias k="kubectl"
 alias tf="terraform"

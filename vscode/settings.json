@@ -41,13 +41,17 @@
   "notebook.output.wordWrap": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.fixAll": ["source.unusedImports"],
-  "python.analysis.typeCheckingMode": "off",
-  "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "off",
+  "ruff.lineLength": 120,
   "tailwindCSS.emmetCompletions": true,
   "terminal.integrated.fontFamily": "'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
   "vim.vimrc.enable": true,
   "workbench.iconTheme": "material-icon-theme",
   "yaml.customTags": [
@@ -81,6 +85,5 @@
   ],
   "yaml.schemas": {
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
-  },
-  "ruff.format.args": ["--line-length=120"]
+  }
 }
