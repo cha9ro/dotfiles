@@ -44,9 +44,6 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# asdf
-source $(brew --prefix asdf)/libexec/asdf.sh
-
 # tfenv and terraform
 if type terraform&>/dev/null; then
   complete -o nospace -C $(which terraform) terraform
