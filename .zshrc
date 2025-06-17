@@ -39,6 +39,9 @@ source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
 
+# volta
+export PATH="${HOME}/.volta/bin:${PATH}"
+
 # theme
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -94,3 +97,5 @@ export SDKMAN_DIR="${HOME}/.sdkman"
 
 # Added by Windsurf
 export PATH="/Users/takuro/.codeium/windsurf/bin:$PATH"
+
+. "$HOME/.local/bin/env"
