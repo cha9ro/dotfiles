@@ -16,8 +16,8 @@ fi
 autoload -Uz compinit && compinit
 autoload -Uz bashcompinit && bashcompinit
 zstyle ':completion:*:default' menu select=1
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' use-cache on
+zstyle ':completion:*:default' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*:default' use-cache on
 export PATH=".:$PATH"
 
 # candidate colorization
@@ -39,16 +39,23 @@ source ${HOME}/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ${HOME}/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
 
+# theme
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 # volta
 export PATH="${HOME}/.volta/bin:${PATH}"
 
 # pnpm
 export PNPM_HOME="${HOME}/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
-# theme
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
-## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# uv for global python
+source "${HOME}/.local/bin/env"
 
 # tfenv and terraform
 if type terraform&>/dev/null; then
@@ -97,16 +104,3 @@ alias gf='git fetch'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
-
-# Added by Windsurf
-export PATH="/Users/takuro/.codeium/windsurf/bin:$PATH"
-
-. "$HOME/.local/bin/env"
-
-# pnpm
-export PNPM_HOME="/Users/takuro/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
