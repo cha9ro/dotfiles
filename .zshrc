@@ -42,6 +42,9 @@ source ${HOME}/.zsh/emoji-cli/emoji-cli.zsh
 # volta
 export PATH="${HOME}/.volta/bin:${PATH}"
 
+# pnpm
+export PNPM_HOME="${HOME}/Library/pnpm"
+
 # theme
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -99,3 +102,11 @@ export SDKMAN_DIR="${HOME}/.sdkman"
 export PATH="/Users/takuro/.codeium/windsurf/bin:$PATH"
 
 . "$HOME/.local/bin/env"
+
+# pnpm
+export PNPM_HOME="/Users/takuro/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
