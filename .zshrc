@@ -15,9 +15,9 @@ if type brew &>/dev/null; then
 fi
 autoload -Uz compinit && compinit
 autoload -Uz bashcompinit && bashcompinit
-zstyle ':completion:*:default' menu select=1
-zstyle ':completion:*:default' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*:default' use-cache on
+zstyle ':completion:*:' menu select=1
+zstyle ':completion:*:' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*:' use-cache on
 export PATH=".:$PATH"
 
 # candidate colorization
