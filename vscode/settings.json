@@ -25,6 +25,7 @@
     "typecheck",
     "vectorstores"
   ],
+  "docker.extension.enableComposeLanguageServer": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
@@ -33,6 +34,11 @@
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "other": "on",
+    "strings": "on"
+  },
   "explorer.autoReveal": false,
   "files.associations": {
     "*.css": "tailwindcss"
@@ -42,6 +48,7 @@
   },
   "files.insertFinalNewline": true,
   "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
   "gitlens.codeLens.enabled": false,
   "hediet.vscode-drawio.resizeImages": null,
   "notebook.formatOnSave.enabled": true,
@@ -94,5 +101,6 @@
   ],
   "yaml.schemas": {
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
-  }
+  },
+  "terminal.external.osxExec": "iTerm.app"
 }
