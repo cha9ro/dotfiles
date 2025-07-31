@@ -7,24 +7,6 @@
   "aws.telemetry": false,
   "chat.agent.enabled": true,
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
-  "cSpell.userWords": [
-    "callout",
-    "chatgpt",
-    "chromadb",
-    "dotenv",
-    "langchain",
-    "neovim",
-    "nextjs",
-    "nextui",
-    "openai",
-    "pydantic",
-    "streamlit",
-    "tailwindcss",
-    "Takezawa",
-    "takuro",
-    "typecheck",
-    "vectorstores"
-  ],
   "docker.extension.enableComposeLanguageServer": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -48,6 +30,12 @@
   },
   "files.insertFinalNewline": true,
   "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "scminput": false
+  },
   "github.copilot.nextEditSuggestions.enabled": false,
   "gitlens.codeLens.enabled": false,
   "hediet.vscode-drawio.resizeImages": null,
@@ -64,6 +52,7 @@
   "ruff.exclude": [".venv"],
   "ruff.lineLength": 120,
   "tailwindCSS.emmetCompletions": true,
+  "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "'Hack Nerd Font Propo', 'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
@@ -101,12 +90,5 @@
   ],
   "yaml.schemas": {
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
-  },
-  "terminal.external.osxExec": "iTerm.app",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
   }
 }
