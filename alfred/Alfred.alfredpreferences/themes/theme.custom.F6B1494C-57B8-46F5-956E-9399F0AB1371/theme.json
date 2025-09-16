@@ -21,14 +21,14 @@
         "font" : "System",
         "color" : "#FFFFFFFF"
       },
-      "iconPaddingHorizontal" : 6,
-      "roundness" : 9,
+      "iconPaddingHorizontal" : 12,
+      "roundness" : 19,
       "paddingVertical" : 6,
       "iconSize" : 36
     },
     "search" : {
       "backgroundSelected" : "#A550A67F",
-      "paddingHorizontal" : 9,
+      "paddingHorizontal" : 15,
       "spacing" : 3,
       "text" : {
         "size" : 28,
@@ -37,18 +37,18 @@
         "color" : "#FFFFFFFF"
       },
       "background" : "#00000026",
-      "roundness" : 9,
+      "roundness" : 19,
       "paddingVertical" : 6
     },
     "window" : {
       "color" : "#00000000",
-      "paddingHorizontal" : 4,
+      "paddingHorizontal" : 7,
       "width" : 600,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
       "blur" : 0,
-      "roundness" : 12,
-      "paddingVertical" : 4
+      "roundness" : 26,
+      "paddingVertical" : 8
     },
     "credit" : "Takuro",
     "visualEffectMode" : 2,
