@@ -5,8 +5,8 @@
   "aws.samcli.enableCodeLenses": true,
   "aws.samcli.location": "/usr/local/bin/sam",
   "aws.telemetry": false,
-  "chat.agent.enabled": true,
-  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+"chat.agent.enabled": true,
+"containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "docker.extension.enableComposeLanguageServer": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -92,5 +92,19 @@
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
   },
   "python.terminal.shellIntegration.enabled": true,
-  "python.analysis.supportAllPythonDocuments": true
+  "python.analysis.supportAllPythonDocuments": true,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

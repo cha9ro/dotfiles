@@ -14,7 +14,7 @@
         "font" : "System",
         "color" : "#9E9E9EFF"
       },
-      "backgroundSelected" : "#A450A6CC",
+      "backgroundSelected" : "#A450A67F",
       "text" : {
         "size" : 18,
         "colorSelected" : "#FFFFFFFF",
@@ -36,7 +36,7 @@
         "font" : "System Light",
         "color" : "#FFFFFFFF"
       },
-      "background" : "#00000026",
+      "background" : "#00000000",
       "roundness" : 19,
       "paddingVertical" : 6
     },
@@ -57,7 +57,7 @@
       "thickness" : 3
     },
     "scrollbar" : {
-      "color" : "#C062C3FF",
+      "color" : "#00000064",
       "thickness" : 3
     },
     "name" : "Sakura Dark"

@@ -4,26 +4,26 @@
       "textSpacing" : 8,
       "subtext" : {
         "size" : 10,
-        "colorSelected" : "#464646CC",
+        "colorSelected" : "#D1D2D4FF",
         "font" : "System Light",
-        "color" : "#464646CC"
+        "color" : "#B7B9B9FF"
       },
       "shortcut" : {
         "size" : 16,
-        "colorSelected" : "#000000FF",
+        "colorSelected" : "#FFFFFFFF",
         "font" : "System",
-        "color" : "#0000007F"
+        "color" : "#9E9E9EFF"
       },
-      "backgroundSelected" : "#A450A67F",
+      "backgroundSelected" : "#0000004C",
       "text" : {
         "size" : 18,
-        "colorSelected" : "#212121FF",
+        "colorSelected" : "#FFFFFFFF",
         "font" : "System",
-        "color" : "#212121FF"
+        "color" : "#FFFFFFFF"
       },
       "iconPaddingHorizontal" : 12,
       "roundness" : 19,
-      "paddingVertical" : 7,
+      "paddingVertical" : 6,
       "iconSize" : 36
     },
     "search" : {
@@ -32,34 +32,34 @@
       "spacing" : 3,
       "text" : {
         "size" : 28,
-        "colorSelected" : "#212121FF",
+        "colorSelected" : "#FFFFFFFF",
         "font" : "System Light",
-        "color" : "#212121FF"
+        "color" : "#FFFFFFFF"
       },
       "background" : "#00000000",
-      "roundness" : 9,
+      "roundness" : 19,
       "paddingVertical" : 6
     },
     "window" : {
       "color" : "#00000000",
-      "paddingHorizontal" : 4,
+      "paddingHorizontal" : 7,
       "width" : 600,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
       "blur" : 0,
       "roundness" : 26,
-      "paddingVertical" : 6
+      "paddingVertical" : 8
     },
     "credit" : "Takuro",
-    "visualEffectMode" : 1,
+    "visualEffectMode" : 2,
     "separator" : {
       "color" : "#00000000",
-      "thickness" : 2
-    },
-    "scrollbar" : {
-      "color" : "#FEFFFF73",
       "thickness" : 3
     },
-    "name" : "Sakura Light"
+    "scrollbar" : {
+      "color" : "#00000064",
+      "thickness" : 3
+    },
+    "name" : "Simple Dark"
   }
 }
