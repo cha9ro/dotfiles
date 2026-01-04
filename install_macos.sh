@@ -22,6 +22,7 @@ dotfiles=(
     ".zsh"
     ".zprofile"
     ".tool-versions"
+    ".hammerspoon"
 )
 for file in ${dotfiles[@]}
 do
@@ -37,3 +38,7 @@ for file in ${vscode_settings[@]}
 do
     ln -fs ${PWD}/${file} ${HOME}/Library/Application\ Support/Code/User/$file
 done
+
+# make symbolic link for ghostty
+ln -fs ${PWD}/ghostty/config "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
+
