@@ -47,6 +47,19 @@
 		</array>
 		<key>2166D3DB-EF96-4C03-B95A-77D5068615D7</key>
 		<array/>
+		<key>27280DF5-78D3-4386-9EC9-E2E8CA15F869</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E0D46FA-9DD4-4D74-BC2E-60666C96DF5A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2BBDFBE4-FBBC-4506-9269-3CFB4017932C</key>
 		<array>
 			<dict>
@@ -120,6 +133,56 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3E0D46FA-9DD4-4D74-BC2E-60666C96DF5A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FB417B7C-1060-4A1C-909B-76456CC37254</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>44322D7B-6B6D-47D8-B383-A1D114D6601C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>44322D7B-6B6D-47D8-B383-A1D114D6601C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>97090C7E-0127-4909-A2CA-D78C9DC0355F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BA892098-6B49-437B-A650-62256CF781FB</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1D21086A-0AED-4EA6-BD28-E6971528277C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BA892098-6B49-437B-A650-62256CF781FB</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -343,6 +406,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>6DE384FF-FDAF-4607-9281-254FAF291EB7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7D3F45C0-A7DC-4185-BA64-B3FD62C7CA86</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7277B529-365D-4D92-B874-22C6E407F47E</key>
 		<array/>
 		<key>72EE2185-F8D8-43A9-949D-57337E125256</key>
@@ -371,11 +447,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7D3F45C0-A7DC-4185-BA64-B3FD62C7CA86</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E0D46FA-9DD4-4D74-BC2E-60666C96DF5A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>900A2A3E-D5CB-475C-996A-C6A8207DB171</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>4FEB803E-78D2-4DAA-A493-0C499D3B3415</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>91D809BB-5106-4221-89E8-F3CB113F026E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>27280DF5-78D3-4386-9EC9-E2E8CA15F869</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -428,6 +530,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>05ACE926-EBA9-4EA1-856D-F95AE9437802</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A62C2C3E-C332-4A12-93D8-C534D7C0EA15</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BEF1EE27-825A-4AD0-8BC4-9EBFAD6DDA4B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -516,6 +631,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>BEF1EE27-825A-4AD0-8BC4-9EBFAD6DDA4B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E0D46FA-9DD4-4D74-BC2E-60666C96DF5A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CFF178E5-E80D-498F-AE8A-6F701B4A1961</key>
 		<array>
 			<dict>
@@ -534,6 +662,34 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E66CAF69-6370-4360-A348-8F43397D64B1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D8BDC8B4-7C81-40EC-9A4A-646DE02EE3D6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BC4A10A8-2DE4-4DE2-99D6-F884F04B8D84</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DFB4D9F9-1E8C-496C-9FFD-12679D2D498A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D8BDC8B4-7C81-40EC-9A4A-646DE02EE3D6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -736,6 +892,21 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FB417B7C-1060-4A1C-909B-76456CC37254</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DFB4D9F9-1E8C-496C-9FFD-12679D2D498A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Vítor Galvão</string>
@@ -841,7 +1012,7 @@ fi</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>readonly items_hash_file="${alfred_workflow_data}/items_hash.txt"
-readonly old_items_hash="$(/bin/cat "${items_hash_file}")"
+readonly old_items_hash="$(&lt; "${items_hash_file}")"
 readonly new_items_hash="$(/usr/bin/sqlite3 "${HOME}/Library/Group Containers/2BUA8C4S2C.com.1password/Library/Application Support/1Password/Data/1password.sqlite" 'SELECT * FROM item_overviews;' | md5)"
 
 [[ -n "${items_hash_file}" ]] || exit 1
@@ -1530,10 +1701,18 @@ Keep it running and try again.</string>
 				<key>runningsubtext</key>
 				<string>Getting items…</string>
 				<key>script</key>
-				<string>readonly file="${alfred_workflow_data}/items.json"
+				<string># If workflow preferences changed, request item update
+if [[ -f './prefs.plist' ]] &amp;&amp; ! /usr/bin/cmp -s './prefs.plist' "${alfred_workflow_data}/prefs.plist"; then
+  /bin/mkdir -p "${alfred_workflow_data}"
+  /bin/cp './prefs.plist' "${alfred_workflow_data}/prefs.plist"
+  ./1password.js 'data_update_detected'
+fi
 
-if [[ -f "${file}" ]]; then
-  cat "${file}"
+# Read items file if present and exit early
+readonly items_file="${alfred_workflow_data}/items.json"
+
+if [[ -f "${items_file}" ]]; then
+  &lt; "${items_file}"
   exit 0
 fi
 
@@ -1544,6 +1723,7 @@ if [[ -f "${prefs_file}" ]]; then
   /usr/libexec/PlistBuddy -c 'Delete :enabled' "${prefs_file}" 2&gt; /dev/null
 fi
 
+# Request initial build
 echo '{
   "rerun": 0.1,
   "items": [{
@@ -1854,13 +2034,17 @@ echo '{
 				<key>script</key>
 				<string>function run() {
   const itemID = $.NSProcessInfo.processInfo.environment.objectForKey("itemID").js
-  const query = itemID + "=" + itemID
-
   const url = $.NSProcessInfo.processInfo.environment.objectForKey("url").js
-  const urlObject = $.NSURL.URLWithString(url)
 
-  if (urlObject.query.js === undefined) return url + "?" + query
-  return url + "&amp;" + query
+  if (url === undefined) throw "Item does not have a configured website URL"
+
+  const urlObject = $.NSURL.URLWithString(url)
+  const components = $.NSURLComponents.componentsWithURLResolvingAgainstBaseURL(urlObject, false)
+  const itemQuery = $.NSURLQueryItem.queryItemWithNameValue(itemID, itemID)
+  const queryItems = components.queryItems.js?.concat(itemQuery) || [itemQuery]
+
+  components.setQueryItems($(queryItems))
+  return components.URL.absoluteString.js
 }</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -2061,6 +2245,35 @@ echo "${new_items_hash}" &gt; "${items_hash_file}"</string>
 			<key>config</key>
 			<dict>
 				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>function clipboard_hash {
+  /usr/bin/pbpaste | /usr/bin/shasum
+}
+
+readonly itinial_hash="$(clipboard_hash)"
+sleep "${copy_cleanup_seconds}"
+[[ "${itinial_hash}" == "$(clipboard_hash)" ]] &amp;&amp; printf 'true'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DFB4D9F9-1E8C-496C-9FFD-12679D2D498A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
@@ -2079,6 +2292,21 @@ echo "${new_items_hash}" &gt; "${items_hash_file}"</string>
 			<string>91D809BB-5106-4221-89E8-F3CB113F026E</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/clipboard.clear</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>BC4A10A8-2DE4-4DE2-99D6-F884F04B8D84</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2260,6 +2488,87 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:copy_cleanup_seconds}</string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>2</integer>
+						<key>matchstring</key>
+						<string>0</string>
+						<key>outputlabel</key>
+						<string>Clear</string>
+						<key>uid</key>
+						<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string></string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>FB417B7C-1060-4A1C-909B-76456CC37254</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Username</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>27280DF5-78D3-4386-9EC9-E2E8CA15F869</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Clear</string>
+						<key>uid</key>
+						<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string></string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D8BDC8B4-7C81-40EC-9A4A-646DE02EE3D6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>https://github.com/alfredapp/1password-workflow/issues/</string>
 				<key>passthroughargument</key>
@@ -2314,6 +2623,54 @@ fi</string>
 		</dict>
 		<dict>
 			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>3E0D46FA-9DD4-4D74-BC2E-60666C96DF5A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>Password</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7D3F45C0-A7DC-4185-BA64-B3FD62C7CA86</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>97090C7E-0127-4909-A2CA-D78C9DC0355F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
 			<dict>
 				<key>concurrently</key>
 				<false/>
@@ -2334,6 +2691,70 @@ fi</string>
 			<string>A62C2C3E-C332-4A12-93D8-C534D7C0EA15</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:copy_notifications}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Notification</string>
+						<key>uid</key>
+						<string>BA892098-6B49-437B-A650-62256CF781FB</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string></string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>44322D7B-6B6D-47D8-B383-A1D114D6601C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>One-Time Password</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BEF1EE27-825A-4AD0-8BC4-9EBFAD6DDA4B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Submarine</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>1D21086A-0AED-4EA6-BD28-E6971528277C</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -2394,6 +2815,13 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<key>ypos</key>
 			<real>440</real>
 		</dict>
+		<key>1D21086A-0AED-4EA6-BD28-E6971528277C</key>
+		<dict>
+			<key>xpos</key>
+			<real>2310</real>
+			<key>ypos</key>
+			<real>1385</real>
+		</dict>
 		<key>2032CDC0-7BD4-4671-8A03-2BEB9F84B3D3</key>
 		<dict>
 			<key>xpos</key>
@@ -2409,6 +2837,13 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<real>2210</real>
 			<key>ypos</key>
 			<real>775</real>
+		</dict>
+		<key>27280DF5-78D3-4386-9EC9-E2E8CA15F869</key>
+		<dict>
+			<key>xpos</key>
+			<real>2020</real>
+			<key>ypos</key>
+			<real>1090</real>
 		</dict>
 		<key>2BBDFBE4-FBBC-4506-9269-3CFB4017932C</key>
 		<dict>
@@ -2454,12 +2889,26 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<key>ypos</key>
 			<real>775</real>
 		</dict>
+		<key>3E0D46FA-9DD4-4D74-BC2E-60666C96DF5A</key>
+		<dict>
+			<key>xpos</key>
+			<real>2120</real>
+			<key>ypos</key>
+			<real>1215</real>
+		</dict>
 		<key>3EFD35DD-0984-4561-BB69-91541E75325E</key>
 		<dict>
 			<key>xpos</key>
 			<real>1070</real>
 			<key>ypos</key>
 			<real>1060</real>
+		</dict>
+		<key>44322D7B-6B6D-47D8-B383-A1D114D6601C</key>
+		<dict>
+			<key>xpos</key>
+			<real>2220</real>
+			<key>ypos</key>
+			<real>1340</real>
 		</dict>
 		<key>4AFED243-84FB-4005-B115-FFD8635E6737</key>
 		<dict>
@@ -2566,6 +3015,13 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<key>ypos</key>
 			<real>1060</real>
 		</dict>
+		<key>7D3F45C0-A7DC-4185-BA64-B3FD62C7CA86</key>
+		<dict>
+			<key>xpos</key>
+			<real>2020</real>
+			<key>ypos</key>
+			<real>1215</real>
+		</dict>
 		<key>900A2A3E-D5CB-475C-996A-C6A8207DB171</key>
 		<dict>
 			<key>xpos</key>
@@ -2588,6 +3044,13 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<real>405</real>
 			<key>ypos</key>
 			<real>210</real>
+		</dict>
+		<key>97090C7E-0127-4909-A2CA-D78C9DC0355F</key>
+		<dict>
+			<key>xpos</key>
+			<real>2310</real>
+			<key>ypos</key>
+			<real>1235</real>
 		</dict>
 		<key>985CB791-EA4E-4B3E-A04E-37A481C33035</key>
 		<dict>
@@ -2672,6 +3135,20 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<key>ypos</key>
 			<real>575</real>
 		</dict>
+		<key>BC4A10A8-2DE4-4DE2-99D6-F884F04B8D84</key>
+		<dict>
+			<key>xpos</key>
+			<real>2555</real>
+			<key>ypos</key>
+			<real>1060</real>
+		</dict>
+		<key>BEF1EE27-825A-4AD0-8BC4-9EBFAD6DDA4B</key>
+		<dict>
+			<key>xpos</key>
+			<real>2020</real>
+			<key>ypos</key>
+			<real>1340</real>
+		</dict>
 		<key>C6542F9B-7628-484C-8E6B-E87E5291D5BA</key>
 		<dict>
 			<key>xpos</key>
@@ -2703,6 +3180,22 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<real>1070</real>
 			<key>ypos</key>
 			<real>310</real>
+		</dict>
+		<key>D8BDC8B4-7C81-40EC-9A4A-646DE02EE3D6</key>
+		<dict>
+			<key>xpos</key>
+			<real>2470</real>
+			<key>ypos</key>
+			<real>1090</real>
+		</dict>
+		<key>DFB4D9F9-1E8C-496C-9FFD-12679D2D498A</key>
+		<dict>
+			<key>note</key>
+			<string>Wait to clear clipboard if unchanged</string>
+			<key>xpos</key>
+			<real>2310</real>
+			<key>ypos</key>
+			<real>1060</real>
 		</dict>
 		<key>E0E63366-C846-4EB6-8625-9CCDD1637737</key>
 		<dict>
@@ -2761,6 +3254,13 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<real>2935</real>
 			<key>ypos</key>
 			<real>630</real>
+		</dict>
+		<key>FB417B7C-1060-4A1C-909B-76456CC37254</key>
+		<dict>
+			<key>xpos</key>
+			<real>2220</real>
+			<key>ypos</key>
+			<real>1090</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -2968,14 +3468,39 @@ To report a problem, run `!1pdiagnostic`.</string>
 				</array>
 			</dict>
 			<key>description</key>
-			<string>Actions to perform when pressing modifier keys.
-Changes come into effect on next cache update.</string>
+			<string>Actions to perform when pressing modifier keys.</string>
 			<key>label</key>
 			<string>⇧↩</string>
 			<key>type</key>
 			<string>popupbutton</string>
 			<key>variable</key>
 			<string>mod_shift</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>defaultvalue</key>
+				<integer>30</integer>
+				<key>markercount</key>
+				<integer>5</integer>
+				<key>maxvalue</key>
+				<integer>120</integer>
+				<key>minvalue</key>
+				<integer>0</integer>
+				<key>onlystoponmarkers</key>
+				<true/>
+				<key>showmarkers</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Number of seconds to wait before erasing copied value.
+"0" to disable.</string>
+			<key>label</key>
+			<string>Clipboard Cleanup</string>
+			<key>type</key>
+			<string>slider</string>
+			<key>variable</key>
+			<string>copy_cleanup_seconds</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -3042,6 +3567,25 @@ Changes come into effect on next cache update.</string>
 				<key>required</key>
 				<false/>
 				<key>text</key>
+				<string>Show notification and play sound on copy operations</string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Notifications</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>copy_notifications</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
 				<string>Check for 1Password modifications and offer to update</string>
 			</dict>
 			<key>description</key>
@@ -3054,8 +3598,10 @@ Changes come into effect on next cache update.</string>
 			<string>auto_refresh</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2024.1</string>
+	<string>25.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/1password-workflow/</string>
 </dict>

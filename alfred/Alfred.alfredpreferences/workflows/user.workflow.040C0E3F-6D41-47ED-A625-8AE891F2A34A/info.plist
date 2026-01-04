@@ -6,6 +6,19 @@
 	<string>com.alfredapp.vitor.googlesuggest</string>
 	<key>connections</key>
 	<dict>
+		<key>4397E2C7-6C13-4328-B17B-23B4F5F6B524</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>63F60794-BB56-4415-9372-BAF974C3A7E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>63F60794-BB56-4415-9372-BAF974C3A7E1</key>
 		<array>
 			<dict>
@@ -30,6 +43,19 @@
 	<string>Google Suggest</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>Search Google with Suggestions for '{query}'</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>4397E2C7-6C13-4328-B17B-23B4F5F6B524</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -65,6 +91,7 @@ function makeItems(itemNames) {
       "uid": name,
       "title": name,
       "subtitle": "Search “" + name + "” on Google",
+      "autocomplete": name,
       "arg": name
     }
   })
@@ -92,7 +119,7 @@ function run(argv) {
   const queryURL = $.NSURL.URLWithString("https://suggestqueries.google.com/complete/search?output=chrome&amp;ie=utf8&amp;oe=utf8&amp;q=" + encodedQuery)
   const requestData = $.NSData.dataWithContentsOfURL(queryURL);
   const requestString = $.NSString.alloc.initWithDataEncoding(requestData, $.NSUTF8StringEncoding).js
-  const newResults = JSON.parse(requestString)[1].filter(result =&gt; result !== argv[0])
+  const newResults = JSON.parse(requestString || "{}")[1]?.filter(result =&gt; result !== argv[0]) || []
 
   // Return final JSON
   return JSON.stringify({
@@ -147,21 +174,30 @@ Get in-line suggestions from Google’s search results via the `g` keyword. Pres
 ![Google in-line results](images/about/google-search-results.png)</string>
 	<key>uidata</key>
 	<dict>
+		<key>4397E2C7-6C13-4328-B17B-23B4F5F6B524</key>
+		<dict>
+			<key>note</key>
+			<string>Optionally set it as a Fallback Search in Features → Default Results</string>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>35</real>
+		</dict>
 		<key>63F60794-BB56-4415-9372-BAF974C3A7E1</key>
 		<dict>
 			<key>note</key>
 			<string>Set your keyword via the "Configure workflow..." button.</string>
 			<key>xpos</key>
-			<real>45</real>
+			<real>230</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>35</real>
 		</dict>
 		<key>B8FFA3AB-AD7D-4316-A84F-5958A671D4FF</key>
 		<dict>
 			<key>xpos</key>
-			<real>265</real>
+			<real>405</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>35</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -189,7 +225,7 @@ Get in-line suggestions from Google’s search results via the `g` keyword. Pres
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.1</string>
+	<string>2025.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-suggest-workflow/</string>
 </dict>
