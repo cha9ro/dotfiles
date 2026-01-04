@@ -1040,7 +1040,7 @@ background-opacity = 0.7
 # regardless of whether they have an explicit background color set or not.
 # 
 # Available since: 1.2.0
-background-opacity-cells = false
+background-opacity-cells = true
 
 # Whether to blur the background when `background-opacity` is less than 1.
 # 
@@ -3015,7 +3015,7 @@ macos-window-buttons = visible
 # most cases.
 # 
 # Changing this option at runtime only applies to new windows.
-macos-titlebar-style = transparent
+macos-titlebar-style = tabs
 
 # Whether the proxy icon in the macOS titlebar is visible. The proxy icon
 # is the icon that represents the folder of the current working directory.
