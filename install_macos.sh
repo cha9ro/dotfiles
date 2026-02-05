@@ -66,6 +66,14 @@ else
     echo "VSCode directory not found, skipping VSCode settings"
 fi
 
+# make symbolic links for .config
+mkdir -p "${HOME}/.config"
+echo "Creating symbolic links for .config..."
+for dir in "${PWD}/.config"/*/; do
+    name=$(basename "$dir")
+    create_symlink "${PWD}/.config/${name}" "${HOME}/.config/${name}" "${name}"
+done
+
 # make symbolic link for ghostty
 ghostty_dir="$HOME/Library/Application Support/com.mitchellh.ghostty"
 if [ -d "${ghostty_dir}" ]; then
