@@ -60,6 +60,9 @@ esac
 # uv for global python
 source "${HOME}/.local/bin/env"
 
+# Rust
+. "$HOME/.cargo/env"
+
 # tfenv and terraform
 if type terraform&>/dev/null; then
   complete -o nospace -C $(which terraform) terraform
@@ -95,17 +98,17 @@ alias n="nvim"
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit -v'
-alias gce='gitmoji -c'
 alias gco='git checkout'
 alias gcoa='git branch | fzf | xargs git checkout'
 alias gl='git pull'
-alias glog='git log --oneline --decorate --graph --color | emojify | less -r'
-alias glogcat='git log --oneline --decorate --graph --color | emojify'
-alias gloga='git log --oneline --decorate --graph --color --all | emojify | less -r'
+alias glog='git log --oneline --decorate --graph --color'
+alias gloga='git log --oneline --decorate --graph --color --all'
 alias gm='git merge'
 alias gp='git push'
 alias gst='git status'
 alias gf='git fetch'
+alias gr='git rebase'
+alias gri='git rebase -i'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"

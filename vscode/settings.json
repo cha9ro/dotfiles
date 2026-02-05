@@ -6,21 +6,21 @@
     "editor.quickSuggestions": {
       "comments": false,
       "other": true,
-      "strings": true
+      "strings": true,
     },
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[markdown]": {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
   },
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff",
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
   "aws.samcli.enableCodeLenses": true,
   "aws.samcli.location": "/usr/local/bin/sam",
@@ -28,12 +28,12 @@
   "chat.agent.enabled": true,
   "chat.mcp.autostart": "newAndOutdated",
   "chat.mcp.gallery.enabled": true,
-  "claudeCode.preferredLocation": "panel",
+  "claudeCode.preferredLocation": "sidebar",
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "docker.extension.enableComposeLanguageServer": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -42,21 +42,21 @@
   "editor.quickSuggestions": {
     "comments": "off",
     "other": "on",
-    "strings": "on"
+    "strings": "on",
   },
   "explorer.autoReveal": false,
   "files.associations": {
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
   },
   "files.exclude": {
-    "**/__pycache__": true
+    "**/__pycache__": true,
   },
   "files.insertFinalNewline": true,
   "github.copilot.chat.agent.thinkingTool": true,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
-    "scminput": false
+    "scminput": false,
   },
   "github.copilot.nextEditSuggestions.enabled": false,
   "gitlens.ai.model": "vscode",
@@ -81,8 +81,9 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "'Hack Nerd Font Propo', 'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "literals",
   "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
   "vim.vimrc.enable": true,
   "workbench.iconTheme": "material-icon-theme",
   "yaml.customTags": [
@@ -112,13 +113,16 @@
     "!Select",
     "!Select sequence",
     "!Split",
-    "!Split sequence"
+    "!Split sequence",
   ],
   "yaml.schemas": {
-    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
+    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.6/dist/toc.schema.json": "/toc\\.yml/i",
   },
   "claudeCode.selectedModel": "opus",
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  }
+    "asvetliakov.vscode-neovim": 1,
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.rebaseEditor.openOnPausedRebase": false,
 }
