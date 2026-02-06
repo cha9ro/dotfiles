@@ -582,6 +582,8 @@
 			<false/>
 			<key>Draw Powerline Glyphs</key>
 			<true/>
+			<key>Faint Text Alpha</key>
+			<real>0.50213738207547165</real>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -652,7 +654,7 @@
 				<real>0.0</real>
 			</dict>
 			<key>Minimum Contrast</key>
-			<real>0.29999999999999999</real>
+			<real>0.39544516509433958</real>
 			<key>Mouse Reporting</key>
 			<false/>
 			<key>Name</key>
@@ -849,7 +851,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Transparency</key>
-			<real>0.22425531914893618</real>
+			<real>0.20018838652482268</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
