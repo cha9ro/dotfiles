@@ -125,4 +125,5 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "gitlens.rebaseEditor.openOnPausedRebase": false,
+  "chat.agentsControl.enabled": false,
 }
