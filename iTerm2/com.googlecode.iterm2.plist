@@ -21,7 +21,7 @@
 	<key>AiMaxTokens</key>
 	<integer>400000</integer>
 	<key>AiModel</key>
-	<string>gpt-5.1</string>
+	<string>gpt-5.2</string>
 	<key>AiResponseMaxTokens</key>
 	<integer>128000</integer>
 	<key>AitermURL</key>
@@ -517,7 +517,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>15.306698803191489</real>
+			<real>4.8850648271276595</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>

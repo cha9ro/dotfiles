@@ -489,7 +489,7 @@ background-image =
 # `0.5 * 1.5 = 0.75`.
 # 
 # Available since: 1.2.0
-background-image-opacity = 1
+background-image-opacity = 1 
 
 # Background image position.
 # 
@@ -1024,7 +1024,7 @@ mouse-scroll-multiplier = precision:1,discrete:3
 # widgets to show through which isn't generally desirable.
 # 
 # On macOS, changing this configuration requires restarting Ghostty completely.
-background-opacity = 0.7
+background-opacity = 0.75
 
 # Applies background opacity to cells with an explicit background color
 # set.
@@ -1040,7 +1040,7 @@ background-opacity = 0.7
 # regardless of whether they have an explicit background color set or not.
 # 
 # Available since: 1.2.0
-background-opacity-cells = true
+background-opacity-cells = true 
 
 # Whether to blur the background when `background-opacity` is less than 1.
 # 
@@ -1073,7 +1073,7 @@ background-opacity-cells = true
 # need to set environment-specific settings and/or install third-party plugins
 # in order to support background blur, as there isn't a unified interface for
 # doing so.
-background-blur = false
+background-blur = 5 
 
 # The opacity level (opposite of transparency) of an unfocused split.
 # Unfocused splits by default are slightly faded out to make it easier to see
@@ -1084,7 +1084,7 @@ background-blur = false
 # is 0.15. This value still looks weird but you can at least see what's going
 # on. A value outside of the range 0.15 to 1 will be clamped to the nearest
 # valid value.
-unfocused-split-opacity = 0.7
+unfocused-split-opacity = 0.8 
 
 # The color to dim the unfocused split. Unfocused splits are dimmed by
 # rendering a semi-transparent rectangle over the split. This sets the color of
@@ -1809,7 +1809,7 @@ window-vsync = true
 # If true, new windows and tabs will inherit the working directory of the
 # previously focused window. If no window was previously focused, the default
 # working directory will be used (the `working-directory` option).
-window-inherit-working-directory = true
+window-inherit-working-directory = true 
 
 # If true, new windows and tabs will inherit the font size of the previously
 # focused window. If no window was previously focused, the default font size
@@ -1869,7 +1869,7 @@ window-inherit-font-size = true
 # 
 # macOS: To hide the titlebar without removing the native window borders
 #        or rounded corners, use `macos-titlebar-style = hidden` instead.
-window-decoration = auto
+window-decoration = auto 
 
 # The font that will be used for the application's window and tab titles.
 # 
@@ -1910,7 +1910,7 @@ window-subtitle = false
 # non-terminal windows within Ghostty.
 # 
 # This is currently only supported on macOS and Linux.
-window-theme = auto
+window-theme = auto 
 
 # The color space to use when interpreting terminal colors. "Terminal colors"
 # refers to colors specified in your configuration and colors produced by
@@ -3015,7 +3015,7 @@ macos-window-buttons = visible
 # most cases.
 # 
 # Changing this option at runtime only applies to new windows.
-macos-titlebar-style = transparent
+macos-titlebar-style = tabs
 
 # Whether the proxy icon in the macOS titlebar is visible. The proxy icon
 # is the icon that represents the folder of the current working directory.
@@ -3175,7 +3175,7 @@ macos-secure-input-indication = true
 #     This is because the update dialog is managed through a
 #     separate framework and cannot be customized without significant
 #     effort.
-macos-icon = retro
+macos-icon = official
 
 # The absolute path to the custom icon file.
 # Supported formats include PNG, JPEG, and ICNS.
