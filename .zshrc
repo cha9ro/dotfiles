@@ -71,8 +71,8 @@ fi
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Ghostty uses vim to edit config via CLI
-export VISUAL="$(which vim)"
+# Ghostty uses nvim to edit config via CLI
+export VISUAL="$(which nvim)"
 
 # direnv hook
 if type direnv&>/dev/null; then
