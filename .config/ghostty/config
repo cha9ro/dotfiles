@@ -1,15 +1,13 @@
 # Appearance
-font-thicken = true
-theme = tokyonight
-background = #0c0b0b
-selection-foreground = #f7f6ec
-selection-background = #2788ad
-cursor-color = #eccf4f
+font-thicken = false
+theme = MyJapanesque
 cursor-style-blink = true
-background-opacity = 0.75
+background-opacity = 0.8
 background-opacity-cells = true
 background-blur = 5
 unfocused-split-opacity = 0.6
+adjust-cell-height = 5%
+font-family = "JetBrains Mono"
 
 # FreeType
 freetype-load-flags = hinting,no-force-autohint,no-monochrome,autohint
@@ -26,8 +24,6 @@ keybind = super+shift+j=write_screen_file:paste
 keybind = super+ctrl+shift+j=write_screen_file:copy
 keybind = super+alt+shift+j=write_screen_file:open
 
-# Command palette
-command-palette-entry = title:"Change Title...",description:"Prompt for a new title for the current terminal.",action:"prompt_surface_title"
 
 # macOS
 macos-titlebar-style = tabs
