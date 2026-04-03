@@ -24,6 +24,6 @@ keybind = super+shift+j=write_screen_file:paste
 keybind = super+ctrl+shift+j=write_screen_file:copy
 keybind = super+alt+shift+j=write_screen_file:open
 
-
 # macOS
 macos-titlebar-style = tabs
+
