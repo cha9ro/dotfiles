@@ -6,8 +6,8 @@ background-opacity = 0.8
 background-opacity-cells = true
 background-blur = 5
 unfocused-split-opacity = 0.6
-adjust-cell-height = 5%
-font-family = "JetBrains Mono"
+adjust-cell-height = 10%
+font-family = "JetBrains Mono, Hack Nerd Font Mono, Menlo"
 
 # FreeType
 freetype-load-flags = hinting,no-force-autohint,no-monochrome,autohint

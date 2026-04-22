@@ -38,6 +38,7 @@
     "source.organizeImports": "explicit",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
@@ -97,6 +98,7 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontFamily": "'Hack Nerd Font Propo', 'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
   "vim.vimrc.enable": true,
+  "workbench.colorTheme": "Dark Modern",
   "workbench.iconTheme": "material-icon-theme",
   "yaml.customTags": [
     "!And",
@@ -131,5 +133,4 @@
     "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.6/dist/toc.schema.json": "/toc\\.yml/i",
   },
   "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
-  "workbench.colorTheme": "Dark Modern",
 }
