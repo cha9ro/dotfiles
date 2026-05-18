@@ -5,9 +5,12 @@ cursor-style-blink = true
 background-opacity = 0.8
 background-opacity-cells = true
 background-blur = 5
-unfocused-split-opacity = 0.6
+unfocused-split-opacity = 0.8
+unfocused-split-fill = #1e1e1e
 adjust-cell-height = 10%
-font-family = "JetBrains Mono, Hack Nerd Font Mono, Menlo"
+font-family = "JetBrains Mono"
+# font-family = "Hack Nerd Font Mono"
+# font-family = "Menlo"
 
 # FreeType
 freetype-load-flags = hinting,no-force-autohint,no-monochrome,autohint

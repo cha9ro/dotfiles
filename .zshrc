@@ -109,6 +109,7 @@ alias gst='git status'
 alias gf='git fetch'
 alias gr='git rebase'
 alias gri='git rebase -i'
+alias gw='git worktree'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="${HOME}/.sdkman"
