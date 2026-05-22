@@ -47,8 +47,6 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# volta
-export PATH="${HOME}/.volta/bin:${PATH}"
 
 # pnpm
 export PNPM_HOME="${HOME}/Library/pnpm"
@@ -116,5 +114,10 @@ export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
 
 # Added by Antigravity
-export PATH="/Users/takuro/.antigravity/antigravity/bin:$PATH"
+export PATH="${HOME}/.antigravity/antigravity/bin:$PATH"
+
+# mise
+if type mise&>/dev/null; then
+  eval "$(mise activate zsh)"
+fi
 

@@ -29,6 +29,7 @@
   "chat.agentsControl.enabled": "hidden",
   "chat.mcp.autostart": "newAndOutdated",
   "chat.mcp.gallery.enabled": true,
+  "chat.unifiedAgentsBar.enabled": true,
   "claudeCode.preferredLocation": "sidebar",
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "docker.extension.enableComposeLanguageServer": false,
@@ -36,7 +37,8 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
@@ -98,11 +100,9 @@
   "terminal.integrated.fontFamily": "'JetBrains Mono', 'Hack Nerd Font Propo', 'MesloLGS NF', Menlo, Monaco, 'Courier New', monospace",
   "vim.vimrc.enable": true,
   "workbench.colorTheme": "Dark Modern",
+  "workbench.editor.useModal": "some",
   "workbench.iconTheme": "material-icon-theme",
   "yaml.schemas": {
-    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.6/dist/toc.schema.json": "/toc\\.yml/i",
+    "file:///Users/takuro/.vscode/extensions/docsmsft.docs-yaml-1.0.6/dist/toc.schema.json": "/toc\\.yml/i"
   },
-  "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
-"chat.unifiedAgentsBar.enabled": true,
-"workbench.editor.useModal": "some",
 }
