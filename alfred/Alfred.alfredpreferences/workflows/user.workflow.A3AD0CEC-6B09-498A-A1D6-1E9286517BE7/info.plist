@@ -503,7 +503,7 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>list-tabs</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
@@ -1652,7 +1652,7 @@ Commands:
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.7</string>
+	<string>1.0.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/epilande/alfred-browser-tabs</string>
 </dict>

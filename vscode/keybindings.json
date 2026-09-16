@@ -9,11 +9,6 @@
     "when": "editorTextFocus && editorLangId == markdown",
   },
   {
-    "key": "alt+cmd+s",
-    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
-    "when": "!isAuxiliaryWindowFocusedContext",
-  },
-  {
     "key": "cmd+g cmd+d",
     "command": "editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus",

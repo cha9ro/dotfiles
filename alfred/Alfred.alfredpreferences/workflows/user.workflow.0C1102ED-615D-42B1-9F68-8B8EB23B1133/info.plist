@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.takuro.gmails</string>
+	<key>connections</key>
+	<dict>
+		<key>A1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Takuro</string>
+	<key>description</key>
+	<string>Open a Gmail account from multiple accounts</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Gmail Account Switcher</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gmails</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>query="$1"
+
+# Accounts are read from the workflow variable GMAIL_ACCOUNTS.
+# One account per line, format:  Name | target
+#   target can be:  an email (you@gmail.com)  -&gt;  mail/u/&lt;email&gt;/
+#                   an index  (u/0, u/1)       -&gt;  mail/u/0/
+#                   a full URL (https://...)   -&gt;  used as-is
+
+lc_query=$(printf '%s' "$query" | tr '[:upper:]' '[:lower:]')
+
+json_escape() {
+  local s="$1"
+  s="${s//\\/\\\\}"
+  s="${s//\"/\\\"}"
+  s="${s//$'\t'/\\t}"
+  s="${s//$'\n'/\\n}"
+  printf '%s' "$s"
+}
+
+items=""
+normalized=$(printf '%s' "$GMAIL_ACCOUNTS" | tr ',' '\n')
+
+while IFS= read -r line; do
+  line="$(printf '%s' "$line" | sed 's/^[[:space:]]*//; s/[[:space:]]*$//')"
+  [ -z "$line" ] &amp;&amp; continue
+
+  name="${line%%|*}"
+  target="${line#*|}"
+  name="$(printf '%s' "$name" | sed 's/^[[:space:]]*//; s/[[:space:]]*$//')"
+  target="$(printf '%s' "$target" | sed 's/^[[:space:]]*//; s/[[:space:]]*$//')"
+  [ -z "$target" ] &amp;&amp; target="$name"
+
+  case "$target" in
+    http*)  url="$target" ;;
+    u/*)    url="https://mail.google.com/mail/${target}/" ;;
+    */*)    url="https://mail.google.com/mail/${target}/" ;;
+    *@*)    url="https://mail.google.com/mail/u/${target}/" ;;
+    *)      url="https://mail.google.com/mail/u/${target}/" ;;
+  esac
+
+  hay=$(printf '%s' "$name $target" | tr '[:upper:]' '[:lower:]')
+  if [ -n "$lc_query" ]; then
+    case "$hay" in
+      *"$lc_query"*) ;;
+      *) continue ;;
+    esac
+  fi
+
+  esc_name=$(json_escape "$name")
+  esc_target=$(json_escape "$target")
+  esc_url=$(json_escape "$url")
+  item="{\"uid\":\"${esc_name}\",\"title\":\"${esc_name}\",\"subtitle\":\"Open ${esc_target}\",\"arg\":\"${esc_url}\",\"autocomplete\":\"${esc_name}\",\"match\":\"${esc_name} ${esc_target}\"}"
+  if [ -z "$items" ]; then items="$item"; else items="$items,$item"; fi
+done &lt;&lt;EOF
+$normalized
+EOF
+
+if [ -z "$items" ]; then
+  esc_q=$(json_escape "$query")
+  items="{\"title\":\"No matching account\",\"subtitle\":\"No account matches: ${esc_q}\",\"valid\":false}"
+fi
+
+printf '{"items":[%s]}' "$items"
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Type an account name to filter</string>
+				<key>title</key>
+				<string>Search Gmail accounts</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Gmail Account Switcher
+
+Usage:
+  gmails            -&gt; list all configured accounts
+  gmails &lt;name&gt;     -&gt; filter, Enter opens that Gmail in your default browser
+
+Configure your accounts in the workflow's Configuration panel
+(the [x] Configure Workflow button), one per line:
+  Name | email@domain          e.g.  work | me@company.com
+  Name | u/0                    (account index, order you signed in)
+  Name | https://full/url/      (any custom URL)
+</string>
+	<key>uidata</key>
+	<dict>
+		<key>A1</key>
+		<dict>
+			<key>xpos</key>
+			<real>110</real>
+			<key>ypos</key>
+			<real>110</real>
+		</dict>
+		<key>B1</key>
+		<dict>
+			<key>xpos</key>
+			<real>400</real>
+			<key>ypos</key>
+			<real>110</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>personal | you@gmail.com
+work | you@company.com</string>
+				<key>lines</key>
+				<integer>6</integer>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>One account per line:  Name | email   (also accepts Name | u/0  or  Name | full-url)</string>
+			<key>label</key>
+			<string>Gmail Accounts</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>GMAIL_ACCOUNTS</string>
+		</dict>
+	</array>
+	<key>variables</key>
+	<dict>
+		<key>GMAIL_ACCOUNTS</key>
+		<string>personal | you@gmail.com
+work | you@company.com</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

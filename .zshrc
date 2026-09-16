@@ -99,8 +99,8 @@ alias gc='git commit -v'
 alias gco='git checkout'
 alias gcoa='git branch | fzf | xargs git checkout'
 alias gl='git pull'
-alias glog='git log --oneline --decorate --graph --color'
-alias gloga='git log --oneline --decorate --graph --color --all'
+alias glog="git log --graph --decorate --color --date=short --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(dim)(%ad, %an)%Creset'"
+alias gloga='glog --all'
 alias gm='git merge'
 alias gp='git push'
 alias gst='git status'
@@ -108,10 +108,6 @@ alias gf='git fetch'
 alias gr='git rebase'
 alias gri='git rebase -i'
 alias gw='git worktree'
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="${HOME}/.sdkman"
-[[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
 
 # Added by Antigravity
 export PATH="${HOME}/.antigravity/antigravity/bin:$PATH"

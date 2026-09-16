@@ -978,7 +978,7 @@ if [[ "${auto_refresh}" -eq 0 ]]; then
   [[ -f "${plist_file}" ]] || exit 0
 
   # Uninstall agent
-  launchctl bootout "gui/$(id -u "${USER}")" "${plist_file}"
+  launchctl bootout "gui/${UID}" "${plist_file}"
   rm "${plist_file}"
 else
   # Exit early if plist exists
@@ -987,7 +987,7 @@ else
   # Install agent
   mkdir -p "${launchagents_dir}"
   echo "${plist_contents}" &gt; "${plist_file}"
-  launchctl bootstrap "gui/$(id -u "${USER}")" "${plist_file}"
+  launchctl bootstrap "gui/${UID}" "${plist_file}"
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -1013,7 +1013,7 @@ fi</string>
 				<key>script</key>
 				<string>readonly items_hash_file="${alfred_workflow_data}/items_hash.txt"
 readonly old_items_hash="$(&lt; "${items_hash_file}")"
-readonly new_items_hash="$(/usr/bin/sqlite3 "${HOME}/Library/Group Containers/2BUA8C4S2C.com.1password/Library/Application Support/1Password/Data/1password.sqlite" 'SELECT * FROM item_overviews;' | md5)"
+readonly new_items_hash="$(/usr/bin/sqlite3 "${HOME}/Library/Group Containers/2BUA8C4S2C.com.1password/Library/Application Support/1Password/Data/1password.sqlite" 'SELECT * FROM items;' | md5)"
 
 [[ -n "${items_hash_file}" ]] || exit 1
 [[ "${old_items_hash}" == "${new_items_hash}" ]] &amp;&amp; exit 0
@@ -2128,7 +2128,7 @@ fi
 
 # Create hash of items
 readonly items_hash_file="${alfred_workflow_data}/items_hash.txt"
-readonly new_items_hash="$(/usr/bin/sqlite3 "${HOME}/Library/Group Containers/2BUA8C4S2C.com.1password/Library/Application Support/1Password/Data/1password.sqlite" 'SELECT * FROM item_overviews;' | md5)"
+readonly new_items_hash="$(/usr/bin/sqlite3 "${HOME}/Library/Group Containers/2BUA8C4S2C.com.1password/Library/Application Support/1Password/Data/1password.sqlite" 'SELECT * FROM items;' | md5)"
 
 mkdir -p "$(dirname "${items_hash_file}")"
 echo "${new_items_hash}" &gt; "${items_hash_file}"</string>
@@ -2784,7 +2784,7 @@ Uncommon but useful actions, such as toggling vaults, can be accessed with `:1pe
 
 A [Fallback Search](https://www.alfredapp.com/help/features/default-results/fallback-searches/) is included.
 
-To report a problem, run `!1pdiagnostic`.</string>
+To report a problem, run `:1pdiagnostic`.</string>
 	<key>uidata</key>
 	<dict>
 		<key>05ACE926-EBA9-4EA1-856D-F95AE9437802</key>
@@ -3598,10 +3598,8 @@ To report a problem, run `!1pdiagnostic`.</string>
 			<string>auto_refresh</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>25.1</string>
+	<string>26.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/1password-workflow/</string>
 </dict>
